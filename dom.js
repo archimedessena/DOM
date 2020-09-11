@@ -105,11 +105,3 @@ for(var i = 0; i < odd.length; i++){
 
 
 console.log(odd)
-
-
- 
-
-
-
- 
-
