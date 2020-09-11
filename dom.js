@@ -13,7 +13,7 @@
 // console.log(document.body);
 // console.log(document.all);
 // console.log(document.all[10]);
-// document.all[10].textcontent = 'Hello DOME';
+// document.all[10].textContent = 'Hello DOME';
 // console.log(document.forms[0]);
 // console.log(document.links);
 // console.log(document.images);
@@ -37,7 +37,7 @@ getUs.style.borderRadius = 'height:30px; width: 25px;';
 getUs.style.backgroundColor = 'red';
 console.log(getUs);
 
-var  ourss = document.getElementById('understand');
+var ourss = document.getElementById('understand');
 console.log(ourss);
 console.log(ourss.textContent);
 console.log(ours.innerHTML);
@@ -49,19 +49,20 @@ console.log(why.innerText);
 const they = () => {
     const theirs = document.getElementById('is');
     theirss = theirs.textContent;
-    for (var i = 0; i < theirss.length; i++){
-        if(theirss.length == "The love of the game"){
+    for (var i = 0; i < theirss.length; i++) {
+        if (theirss.length == "The love of the game") {
             return "kofi";
         }
-    }return "it is normal";
-    
- }
- console.log(they());
+    }
+    return "it is normal";
 
- const list =document.getElementsByClassName('list-inline-item');
- for (var i = 0; i < list.length; i++ ){
-     list[i].style.backg
- }
+}
+console.log(they());
+
+const list = document.getElementsByClassName('list-inline-item');
+for (var i = 0; i < list.length; i++) {
+    list[i].style.backgroundColor = 'red';
+}
 console.log(list)
 
 
@@ -98,10 +99,34 @@ title[0].textContent = 'hello';
 console.log(title);
 
 var odd = document.querySelectorAll('.li:nth-child(odd)');
-for(var i = 0; i < odd.length; i++){
+for (var i = 0; i < odd.length; i++) {
     odd[i].style.backgroundColor = "brown";
 }
 
 
 
-console.log(odd)
+console.log(odd);
+
+
+
+
+// getelementbyid
+var myElement = document.getElementById('is');
+console.log(myElement.innerHTML);
+myElement.style.color = 'blue';
+console.log(myElement);
+console.log(myElement.textContent);
+//myElement.innerText;
+
+var ourElement = document.getElementsByClassName('list');
+//ourElement.style.appendChild = 'blue';
+
+var ourEelments = document.getElementsByTagName('understand');
+
+
+var ourSchool = document.querySelector('.list');
+var ourSchools = document.querySelectorAll('.list');
+
+
+
+
