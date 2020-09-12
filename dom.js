@@ -130,3 +130,82 @@ var ourSchools = document.querySelectorAll('.list');
 
 
 
+// TRAVERSING THE DOM
+
+// parentNode
+
+var nothingList = document.querySelector('#understand');
+console.log(nothingList.parentNode);
+console.log(nothingList.parentNode.firstChild);
+console.log(nothingList.childNodes);
+
+// parentElement
+console.log(nothingList.parentElement);
+console.log(nothingList.parentElement.parentElement.parentElement.parentElement.animate);
+
+// childNodes
+console.log(nothingList.childNodes);
+console.log(nothingList.children);
+console.log(nothingList.children);
+nothingList.children[1].style.backgroundColor = "grey";
+
+// firstChild
+//console.log(nothingList.firstChild);
+//console.log(nothingList.firstElementChild);
+//nothingList.firstElementChild.textContent = 'hello';
+//console.log(nothingList)
+
+
+// lastchild
+//console.log(nothingList.lastChild);
+//console.log(nothingList.lastElementChild);
+//nothingList.lastElementChild.textContent = 'hello';
+
+
+//nextSibling
+//console.log(nothingList.nextSibling);
+//console.log(nothingList.nextElementSibling);
+
+
+
+// previousSibling
+// previousElementSibling
+
+
+
+// createElement
+var newDiv = document.createElement('div');
+
+// Add class
+newDiv.className = 'hello';
+
+// Add id
+newDiv.id = 'hello';
+
+// Add attr
+newDiv.setAttribute('title', 'Hello Div');
+
+// Create text node
+var newDivText = document.createTextNode('Hello World, this is a world of fantasy');
+
+//newDivText.style.fontStyle = 'italic';
+
+// Add text to Div
+newDiv.appendChild(newDivText);
+
+// inserting into the dom
+var container = document.querySelector('header .container');
+
+var h1 = document.querySelector('header h1');
+
+console.log(newDiv);
+
+newDiv.style.fontSize = 'xx-large';
+newDiv.style.display = 'flex';
+newDiv.style.color = 'grey';
+newDiv.style.backgroundColor = 'blue';
+container.insertBefore(newDiv, h1);
+
+var everything = document.querySelector('#is');
+
+console.log(everything.parentElement.parentElement.parentElement.parentElement.parentElement.textContent)
