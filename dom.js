@@ -209,3 +209,50 @@ container.insertBefore(newDiv, h1);
 var everything = document.querySelector('#is');
 
 console.log(everything.parentElement.parentElement.parentElement.parentElement.parentElement.textContent)
+
+
+
+
+// EVENTS //
+
+var button = document.getElementById('button').addEventListener('click', buttonClick);//function(){
+    //console.log(123);
+//})
+
+/*function buttonClick(){
+    console.log('Button Clicked');
+}*/
+
+//var buttons = document.getElementById('button').addEventListener.animate('click', buttonClick);
+// Another way of writing
+/*function buttonClick(){
+    document.getElementById('header-title').textContent = 
+    document.querySelector('#main').style.backgroundColor = "grey";
+}; */
+
+
+function buttonClick(e){
+    console.log(e.target);
+    console.log(e.target.id);
+    console.log(e.target.className);
+    console.log(e.target.classList);
+    console.log(e.type); // it tells you what type of event we are using
+    console.log(e.clientX); // position of where the user click on the x- axis and is from the browser
+    console.log(e.clientY); // position of where the user  clicked on the Y
+    console.log(e.offsetX); // the actual position and it increases and it is from the actual element itself
+    console.log(e.offsetY);
+
+    console.log(e.altKey); // it determines whether you are holding the alt key or not
+    console.log(e.ctrlKey);
+    console.log(e.shiftKey);
+ 
+}
+
+
+var runEvent = document.getElementById('button').addEventListener('click', runEvent);
+function runEvent(e){
+    console.log('Event type: '+e.type);
+}
+
+
+
