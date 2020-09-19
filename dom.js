@@ -249,10 +249,74 @@ function buttonClick(e){
 }
 
 
-var runEvent = document.getElementById('button').addEventListener('click', runEvent);
+//var runEvent = document.getElementById('button').addEventListener('click', runEvent);
+//function runEvent(e){
+//    console.log('Event type: '+e.type);
+//}
+
+
+
+
+//addEvenListener//
+var button = document.getElementById('button');
+
+// button.addEventListener//
+//button.addEvenListener('dblclick', runEvent);
+//function runEvent(e){
+//    console.log('EVENT TYPE: '+e.type);
+
+//} 
+
+
+// other events
+// mousedown
+// mouseup
+//mouseenter
+//mouseleave
+//mouseover
+//mouseout
+//mousemove
+
+
+// To be revised
+//button.addEvenListener('mousemove', runEvent);
+
+//function runEvent(e){
+ //    console.log('EVENT TYPE: '+e.type);
+
+   // output.innerHTML = '<h3>MouseX: '+e.offsetX+' </h3><h3>MouseY: '+e.offsetY+'</h3>';
+   //body.style.backgroundColor = "rgb("+e.offsetX+", "+e.offsetY+", 4 0)";
+//};
+
+// keyboard event
+var input = document.querySelector('input[type="text"');
+var form = document.querySelector('form');
+//itemInput.document.addEventListener('keydown', runEvent);
+
 function runEvent(e){
-    console.log('Event type: '+e.type);
-}
+    console.log('EVENT TYPE: '+e.type);
+
+    console.log(e.target.value);
+    document.getElementById('output').innerHTML = '<h3>'+e.target.value+'</h3>';
+
+};
 
 
 
+// other forms of keyboard event
+// keyup
+//keypress
+
+
+// other events that are added to text item itemInput
+//focus: this is when you click input box and it shows its focusness
+// blur: this makes the input box blur when you click out of the box
+
+
+// cut
+//paste
+// input
+
+//change
+
+//submit: is an event that is used  to submit  and it works with this function: e.preventDefault();
